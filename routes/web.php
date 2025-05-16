@@ -6,6 +6,7 @@ use App\Http\Controllers\RegistroController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,6 +16,7 @@ Route::get('/', function () {
     return view('inicio');
 });
 
+//rutas de registro y login
 
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
@@ -28,6 +30,7 @@ Route::post('/registro', [RegistroController::class, 'register']);
 Route::get('/admin', [AdminController::class, 'showForm'])->name('admin');
 Route::post('/admin', [AdminController::class, 'store'])->name('admin.store');
 
+//rutas de los clientes registrados
 
 Route::get('/cliente', [ClienteController::class, 'index']);
 
@@ -45,3 +48,20 @@ Route::get('/otrasmarcas', [ClienteController::class, 'productosOtrasMarcas']);
 
 
 Route::get('/productos', [ProductoController::class, 'porMarca'])->name('productosPorMarca');
+
+
+//rutas de los usuarios sin loguearse
+
+Route::get('/usuario', [UsuarioController::class, 'index']);
+
+Route::get('/nikeusuario', [UsuarioController::class, 'productosNike']);
+
+Route::get('/adidasusuario', [UsuarioController::class, 'productosAdidas']);
+
+Route::get('/marathonusuario', [UsuarioController::class, 'productosMarathon']);
+
+Route::get('/marcamarausu', [UsuarioController::class, 'productosMarcaMarathon']);
+
+Route::get('/marcanikeusu', [UsuarioController::class, 'productosMarcaNike']);
+
+Route::get('/otrasmarcasusu', [UsuarioController::class, 'productosOtrasMarcas']);

@@ -5,7 +5,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Define la fuente predeterminada como Roboto */
+    font-family: 'Roboto', sans-serif;
+    /* Define la fuente predeterminada como Roboto */
     font-family: "shadows Into Light", cursive;
     font-size: 25px;
     text-decoration: none;
@@ -14,8 +15,10 @@
 /* Establece el fondo del cuerpo de la página con un degradado de colores */
 body {
     background: linear-gradient(120deg, red, yellow, blue);
-    margin: 0; /* Evita el espacio en blanco en el borde de la pantalla */
-    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en pantallas pequeñas */
+    margin: 0;
+    /* Evita el espacio en blanco en el borde de la pantalla */
+    overflow-x: hidden;
+    /* Evita la barra de desplazamiento horizontal en pantallas pequeñas */
 }
 
 /* Estilos para el encabezado */
@@ -24,11 +27,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: auto; /* Ajusta automáticamente la altura */
+    height: auto;
+    /* Ajusta automáticamente la altura */
     padding: 10px;
     flex-wrap: wrap;
-    flex-direction: row; /* Mantén la disposición horizontal en pantallas pequeñas */
+    flex-direction: row;
+    /* Mantén la disposición horizontal en pantallas pequeñas */
 }
+
 /* Estilos para el logotipo en el encabezado */
 .header .logo {
     cursor: pointer;
@@ -70,7 +76,8 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.header .Nav-links.responsive-links a{
+
+.header .Nav-links.responsive-links a {
     color: #fff;
 }
 
@@ -86,11 +93,13 @@ body {
     font-weight: 700;
     background-color: white;
     color: #000;
-    padding: 9px 20px; /* Aumentamos el padding para hacer el botón más grande */
+    padding: 9px 20px;
+    /* Aumentamos el padding para hacer el botón más grande */
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 1s ease; /* Simplificamos la transición */
+    transition: all 1s ease;
+    /* Simplificamos la transición */
 }
 
 /* Estilos para el botón "CONTACTANOS" cuando se pasa el mouse por encima */
@@ -103,25 +112,34 @@ body {
 /* Estilos para la barra de navegación en pantallas pequeñas */
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column; /* Cambiamos a disposición de columna para móviles */
-        align-items: center; /* Centramos los elementos horizontalmente */
-        text-align: center; /* Centramos el texto */
+        flex-direction: column;
+        /* Cambiamos a disposición de columna para móviles */
+        align-items: center;
+        /* Centramos los elementos horizontalmente */
+        text-align: center;
+        /* Centramos el texto */
     }
 
     .logo img {
-        order: 1; /* Cambiamos el orden para que el logotipo esté arriba */
-        margin-bottom: 10px; /* Añadimos un pequeño espacio debajo del logotipo */
+        order: 1;
+        /* Cambiamos el orden para que el logotipo esté arriba */
+        margin-bottom: 10px;
+        /* Añadimos un pequeño espacio debajo del logotipo */
     }
 
     .Nav-links {
-        order: 2; /* Cambiamos el orden para que la lista de navegación esté en el medio */
+        order: 2;
+        /* Cambiamos el orden para que la lista de navegación esté en el medio */
     }
 
     .boton {
-        order: 3; /* Cambiamos el orden para que "CONTACTANOS" esté abajo */
-        margin-top: 10px; /* Añadimos un pequeño espacio arriba del botón */
+        order: 3;
+        /* Cambiamos el orden para que "CONTACTANOS" esté abajo */
+        margin-top: 10px;
+        /* Añadimos un pequeño espacio arriba del botón */
     }
 }
+
 /* Estilos para el enlace "COMO LLEGAR" en pantallas grandes */
 .Nav-links li:last-child a {
     font-weight: 700;
@@ -144,31 +162,40 @@ body {
 
 /* Estilos para el mensaje de bienvenida */
 .welcome-message {
-    color: #fff; /* Color blanco para el texto */
-    font-size: 16px; /* Tamaño de fuente */
-    margin-bottom: 10px; /* Espacio inferior */
+    color: #fff;
+    /* Color blanco para el texto */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    margin-bottom: 10px;
+    /* Espacio inferior */
 }
 
 /* Estilos para la palabra "Bienvenido" */
 .welcome-text-white {
-    color: #fff; /* Color blanco para la palabra "Bienvenido" */
+    color: #fff;
+    /* Color blanco para la palabra "Bienvenido" */
 }
 
 /* Estilos para el nombre de usuario */
 .username {
-    color: #fff; /* Color blanco para el nombre de usuario */
+    color: #fff;
+    /* Color blanco para el nombre de usuario */
 }
 
 /* Estilos para el icono de usuario */
 .fa-user {
-    color: #fff; /* Color blanco para el icono */
-    margin-right: 5px; /* Espacio a la derecha del icono */
+    color: #fff;
+    /* Color blanco para el icono */
+    margin-right: 5px;
+    /* Espacio a la derecha del icono */
 }
 
 /* Estilos para el enlace de cierre de sesión */
 .logout-link {
-    color: #fff; /* Color blanco para el icono */
-    margin-left: 10px; /* Espacio a la izquierda del icono */
+    color: #fff;
+    /* Color blanco para el icono */
+    margin-left: 10px;
+    /* Espacio a la izquierda del icono */
 }
 
 
@@ -179,58 +206,92 @@ body {
     display: flex;
     margin-left: 0px;
     justify-content: space-between;
-    
+
 }
-.objetos img{
+
+.objetos img {
     max-width: 50%;
     height: auto;
 }
-.slider{
+
+.slider {
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
-.slider ul{
+
+.slider ul {
     display: flex;
     padding: 0;
     width: 600%;
     animation: automatico 15s infinite alternate linear;
 }
+
 .slider li {
     width: 100%;
     list-style: none;
 }
-.slider img{
+
+.slider img {
     width: 100%;
     height: 250px;
 }
 
-@media(min-width: 768px){
-    .slider img{
+@media(min-width: 768px) {
+    .slider img {
         height: 550px;
     }
 }
 
 @keyframes automatico {
-    0% { margin-left: 0; }
-    10% { margin-left: 0; }
+    0% {
+        margin-left: 0;
+    }
 
-    20% { margin-left: 0; }
-    30% { margin-left: -100%; }
+    10% {
+        margin-left: 0;
+    }
 
-    40% { margin-left: -100%; }
-    50% { margin-left: -100%; }
+    20% {
+        margin-left: 0;
+    }
 
-    60% { margin-left: -200%; }
-    70% { margin-left: -200%; }
+    30% {
+        margin-left: -100%;
+    }
 
-    80% { margin-left: -300%; }
-    90% { margin-left: -300%; }
+    40% {
+        margin-left: -100%;
+    }
 
-    95% { margin-left: -400%; }
+    50% {
+        margin-left: -100%;
+    }
 
-    100% { margin-left: -500%; }
-    
+    60% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    90% {
+        margin-left: -300%;
+    }
+
+    95% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: -500%;
+    }
+
 }
 
 
@@ -239,53 +300,59 @@ body {
     width: 100%;
     margin: 40px auto;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
-  }
-  
-  .containerr .swiper-container {
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.containerr .swiper-container {
     width: 100%;
     padding: 10px;
-   
-  }
-  
-  .containerr .swiper-slide {
+
+}
+
+.containerr .swiper-slide {
     position: relative;
     text-align: center;
     font-size: 18px;
     text-align: start;
     box-shadow: 0 0 10px #666;
     scale: 1.05;
-    min-height: 300px; /* Ajusta el valor según sea necesario */
+    min-height: 300px;
+    /* Ajusta el valor según sea necesario */
     display: flex;
     flex-direction: column;
-  }
-  
-  .containerr .swiper-slide img {
+}
+
+.containerr .swiper-slide img {
     display: block;
     width: 100%;
-    height: 50%; /* Ajusta el valor según sea necesario */
+    height: 50%;
+    /* Ajusta el valor según sea necesario */
     object-fit: cover;
     padding: 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-  }
-  
-  .containerr .swiper-slide .card-description {
-    
+}
+
+.containerr .swiper-slide .card-description {
+
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
     padding: 1rem 1rem;
     text-align: center;
     color: black;
     font-weight: bold;
-    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+    font-size: 16px;
+    /* Ajusta el tamaño del texto según sea necesario */
     flex-grow: 1;
-  }
-  
-  .containerr .swiper-slide .card-link {
+}
+
+.containerr .swiper-slide .card-link {
     margin: 40px auto;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
     text-align: center;
     border: none;
     background-color: black;
@@ -293,31 +360,33 @@ body {
     padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: auto; /* Para que el enlace de compra esté alineado en la parte inferior */
-  }
-  
-  .containerr .swiper-slide .card-link a {
+    margin-top: auto;
+    /* Para que el enlace de compra esté alineado en la parte inferior */
+}
+
+.containerr .swiper-slide .card-link a {
     color: white;
     font-weight: bold;
-    font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
-  }
-  
-  .swiper-button-next {
-    right: 30px !important;
-  }
-  
-  .swiper-button-prev {
-    left: 30px !important;
-  }
+    font-size: 16px;
+    /* Ajusta el tamaño del texto según sea necesario */
+}
 
-  
-  
+.swiper-button-next {
+    right: 30px !important;
+}
+
+.swiper-button-prev {
+    left: 30px !important;
+}
+
+
+
 /* Estilos para la sección "subtitulo" */
 .subtitulo {
     display: flex;
     justify-content: center;
     color: rgb(4, 0, 255);
-    
+
 }
 
 /* Estilos para el título h1 dentro de la clase "subtitulo" */
@@ -339,7 +408,8 @@ body {
     width: 100%;
     margin: 40px auto;
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
 }
 
 /* Estilos para el mostrador principal */
@@ -354,12 +424,14 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples filas */
 }
 
 /* Estilos para los elementos de producto */
 .mostrador .fila .item {
-    flex: 0 0 calc(25% - 20px); /* Para 4 imágenes por fila */
+    flex: 0 0 calc(25% - 20px);
+    /* Para 4 imágenes por fila */
     padding: 0;
     height: auto;
     text-align: center;
@@ -488,12 +560,18 @@ body {
 /* Estilo para el enlace "AGREGAR AL CARRITO" */
 .agregar-al-carrito {
     display: inline-block;
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espacio interno */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave */
+    background-color: #4CAF50;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    /* Espacio interno */
+    text-decoration: none;
+    /* Sin subrayado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
 }
 
 /* Cambia el color de fondo al pasar el cursor */
@@ -506,42 +584,47 @@ body {
 
 /* Estilos para los elementos de producto en pantallas grandes */
 .mostrador .fila .item {
-    flex: 0 0 calc(25% - 20px); /* Para 4 imágenes por fila */
+    flex: 0 0 calc(25% - 20px);
+    /* Para 4 imágenes por fila */
     /* ... (otros estilos) */
 }
 
 /* Estilos para los elementos de producto en pantallas medianas */
 @media screen and (max-width: 768px) {
     .mostrador .fila .item {
-        flex: 0 0 calc(33.33% - 20px); /* Para 3 imágenes por fila */
+        flex: 0 0 calc(33.33% - 20px);
+        /* Para 3 imágenes por fila */
     }
 }
 
 /* Estilos para los elementos de producto en pantallas pequeñas */
 @media screen and (max-width: 576px) {
     .mostrador .fila .item {
-        flex: 0 0 calc(50% - 20px); /* Para 2 imágenes por fila */
+        flex: 0 0 calc(50% - 20px);
+        /* Para 2 imágenes por fila */
     }
 }
 
 /*estilo para los productos*/
-.columna{
+.columna {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .producto {
     width: calc(33.33% - 20px);
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: background-color 0.3s ease;
 }
+
 /* Estilos para las imágenes dentro de la clase "producto" */
 .producto img {
     width: 250px;
@@ -549,23 +632,30 @@ body {
     margin-bottom: 10px;
     margin-top: 50px;
 }
+
 /* Estilos para los títulos (h2) dentro de la clase "producto" */
 .producto h2 {
-    margin: 0; /* Elimina el margen superior e inferior del título */
-    color:  black;
-    font-size: 25px; /* Cambia el tamaño de las letras a 20px */
+    margin: 0;
+    /* Elimina el margen superior e inferior del título */
+    color: black;
+    font-size: 25px;
+    /* Cambia el tamaño de las letras a 20px */
 }
 
 /* Estilos para los textos (p) dentro de la clase "producto" */
 .producto p {
     font-size: 20px;
-    margin: 0; /* Elimina el margen superior e inferior de los párrafos */
+    margin: 0;
+    /* Elimina el margen superior e inferior de los párrafos */
     color: #263A29;
 }
+
 /* Estilos para la clase "producto" cuando se pasa el mouse por encima */
 .producto:hover {
-    background-color: #0EA293 ; /* Cambiar el color de fondo en el hover */
-    color: #219C90; /* Cambiar el color del texto en el hover */
+    background-color: #0EA293;
+    /* Cambiar el color de fondo en el hover */
+    color: #219C90;
+    /* Cambiar el color del texto en el hover */
 }
 
 @media screen and (max-width: 768px) {
@@ -579,36 +669,42 @@ body {
         width: 100%;
     }
 }
+
 /*todo esto es el footer*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
 }
 
-body{
+body {
     font-family: sans-serif;
     text-transform: capitalize;
 }
-.conteiner{
+
+.conteiner {
     height: 280px;
     max-width: 1200px;
     margin: 0 auto;
 }
-.footer{
+
+.footer {
     background-color: black;
     padding: 80px 0;
 }
-.footer-row{
+
+.footer-row {
     display: flex;
     flex-wrap: wrap;
 }
-.footer-links{
+
+.footer-links {
     width: 25%;
     padding: 0 15px;
 }
-.footer-links h3{
+
+.footer-links h3 {
     font-size: 20px;
     color: #FFFFFF;
     margin-bottom: 25px;
@@ -618,19 +714,21 @@ body{
     display: inline-block;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
     font-size: 18px;
     text-decoration: none;
     color: #BBBBBB;
     display: block;
     margin-bottom: 15px;
-    transition: all , 3s ease;
+    transition: all, 3s ease;
 }
-.footer-links ul li a:hover{
+
+.footer-links ul li a:hover {
     color: #FFFFFF;
     padding-left: 6px;
 }
-.social-link a{
+
+.social-link a {
     display: inline-block;
     max-width: 40px;
     width: 40px;
@@ -640,73 +738,82 @@ body{
     min-height: 40px;
     border-radius: 50%;
     color: #fff;
-    transition: all , 5s ease;
+    transition: all, 5s ease;
 }
-.social-link a:hover{
+
+.social-link a:hover {
     background-color: brown;
 }
-.copiright{
+
+.copiright {
     color: #fff;
     font-size: 30px;
     display: flex;
     justify-content: center;
 }
 
-@media (max-with:991px){
-    .footer-row{
+@media (max-with:991px) {
+    .footer-row {
         text-align: center;
     }
-    .footer-links{
+
+    .footer-links {
         width: 100%;
         margin-bottom: 30px;
     }
-    
+
 }
-.agua{
-    
+
+.agua {
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.agua img{
-    
+
+.agua img {
+
     height: 100px;
     width: 200px;
     background-color: transparent;
 }
+
 /*las politicas o subtitulos son aqui*/
-.politicas h2{
+.politicas h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.politicas h2{
+
+.politicas h2 {
     font-size: 25px;
 }
+
 /*hasta aqui es en general*/
-.politicas ul li{
+.politicas ul li {
     font-size: 20px;
     text-align: justify;
 }
+
 /*pertenece a servicio lo de arribita*/
-.politicas p{
+.politicas p {
     font-size: 20px;
     text-align: justify;
 }
+
 /* Estilo para los títulos */
 .politicas strong {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 25px; /* Tamaño de fuente para los títulos */
-    
+    font-size: 25px;
+    /* Tamaño de fuente para los títulos */
+
 }
 
 /* Estilo para el contenido dentro de los párrafos */
 .politicas p {
-    font-size: 20px; /* Tamaño de fuente para el contenido */
+    font-size: 20px;
+    /* Tamaño de fuente para el contenido */
     text-align: justify;
 }
-
-
-

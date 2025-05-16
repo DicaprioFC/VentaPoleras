@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
     <link rel="stylesheet" href="estilo.css"> <!-- Enlaza una hoja de estilo CSS llamada "estilo.css" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- Enlaza una hoja de estilo CSS de Font Awesome -->
-    <title>inicio sin usuarios</title> <!-- Establece el título de la página como "inicio" -->
+    <title>Usuarios</title> <!-- Establece el título de la página como "inicio" -->
 </head>
 
 <body>
@@ -15,13 +15,12 @@
             <div class="logo"> <!-- Elemento de logo -->
                 <img src="imagenes/Mi marca de agua.jpeg" alt=""> <!-- Imagen de logo -->
             </div>
-            <nav> <!-- Menú de navegación -->
-                <ul class="Nav-links responsive-links"> <!-- Lista de enlaces de navegación con la clase "responsive-links" -->
-                    <li><a href="{{ url('/productos') }}">PRODUCTOS</a></li>
-                    <li><a href="pedidos.php">PEDIDOS</a></li> <!-- Enlace a "tipo_producto.html" -->
-                    <li><a href="como llegar.php">COMO LLEGAR</a></li> <!-- Enlace a "ubicacion.html" -->
-                </ul>
             </nav>
+            <ul class="Nav-links responsive-links"> <!-- Lista de enlaces de navegación con la clase "responsive-links" -->
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="pedidos.php">PEDIDOS</a></li> <!-- Enlace a "tipo_producto.html" -->
+                <li><a href="como llegar.php">COMO LLEGAR</a></li> <!-- Enlace a "ubicacion.html" -->
+            </ul>
 
 
             <a href="login" class="logout-link"><i class="fas fa-user-plus"></i></a>
@@ -50,7 +49,7 @@
 
             <!-- Primer producto: Poleras sublimables -->
             <div class="producto">
-                <a href="{{ url('/nikeusuario') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/nikeusuario') }}"> <!-- Enlace a la página de poleras -->
                     <h2>POLERAS NIKE</h2> <!-- Título del producto -->
                     <img src="imagenes/NIKE7.png" alt=""> <!-- Imagen del producto -->
                     <p><strong> OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -127,7 +126,7 @@
                         <h3>Pedidos</h3>
                         <ul>
                             <li><a href="">Pedidos</a></li> <!-- Enlace a "tipo_producto.html" -->
-                            <li><a href="">Productos</a></li> <!-- Enlace a "Productos.html" -->
+                            <li><a href="productos.php">Productos</a></li> <!-- Enlace a "Productos.html" -->
                             <li><a href="">Envíos</a></li> <!-- Enlace a una sección de envíos (no especificado) -->
                         </ul>
                     </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
     <link rel="stylesheet" href="estilo.css"> <!-- Enlaza una hoja de estilo CSS llamada "estilo.css" -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!-- Enlaza una hoja de estilo CSS de Font Awesome -->
-    <title>inicio sin usuarios</title> <!-- Establece el título de la página como "inicio" -->
+    <title>inicio con usuarios</title> <!-- Establece el título de la página como "inicio" -->
 </head>
 
 <body>
@@ -24,7 +24,7 @@
             </nav>
 
 
-            <a href="login" class="logout-link"><i class="fas fa-user-plus"></i></a>
+            <a href="{{ url('/') }}" class="logout-link"><i class="fas fa-sign-out-alt"></i></a>
 
         </header>
 
@@ -50,7 +50,7 @@
 
             <!-- Primer producto: Poleras sublimables -->
             <div class="producto">
-                <a href="{{ url('/nikeusuario') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/nikecliente') }}"> <!-- Enlace a la página de tazas -->
                     <h2>POLERAS NIKE</h2> <!-- Título del producto -->
                     <img src="imagenes/NIKE7.png" alt=""> <!-- Imagen del producto -->
                     <p><strong> OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -59,7 +59,7 @@
 
             <!-- Segundo producto: Tazas sublimables -->
             <div class="producto">
-                <a href="{{ url('/adidasusuario') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/adidascliente') }}"> <!-- Enlace a la página de tazas -->
                     <h2>POLERAS ADIDAS</h2> <!-- Título del producto -->
                     <img src="imagenes/adidas1.png" alt=""> <!-- Imagen del producto -->
                     <p><strong>OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -68,7 +68,7 @@
 
             <!-- Tercer producto: Rompecabezas sublimables -->
             <div class="producto">
-                <a href="{{ url('/marathonusuario') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/marathoncliente') }}"> <!-- Enlace a la página de tazas -->
                     <h2>POLERAS MARATHON</h2> <!-- Título del producto -->
                     <img src="imagenes/marathon.png" alt=""> <!-- Imagen del producto -->
                     <p><strong>OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -77,7 +77,7 @@
 
             <!-- Cuarto producto: Llaveros sublimables -->
             <div class="producto">
-                <a href="{{ url('/marcamarausu') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/marcamaracli') }}"> <!-- Enlace a la página de tazas -->
                     <h2>MARCA MARATHON</h2> <!-- Título del producto -->
                     <img src="imagenes/marathon.logo.jpg" alt=""> <!-- Imagen del producto -->
                     <p><strong>OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -86,7 +86,7 @@
 
             <!-- Quinto producto: Decorativos sublimables -->
             <div class="producto">
-                <a href="{{ url('/marcanikeusu') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/marcanikecli') }}"> <!-- Enlace a la página de tazas -->
                     <h2>MARCA NIKE</h2> <!-- Título del producto -->
                     <img src="imagenes/logo nike.png" alt=""> <!-- Imagen del producto -->
                     <p><strong>OFERTAS</strong></p> <!-- Descripción del producto -->
@@ -95,7 +95,7 @@
 
             <!-- Sexto producto: Gorras sublimables -->
             <div class="producto">
-                <a href="{{ url('/otrasmarcasusu') }}"> <!-- Enlace a la página de tazas -->
+                <a href="{{ url('/otrasmarcas') }}"> <!-- Enlace a la página de tazas -->
                     <h2>OTRAS MARCAS </h2> <!-- Título del producto -->
                     <img src="imagenes/marcas.jpg" alt=""> <!-- Imagen del producto -->
                     <p><strong>OFERTAS</strong></p> <!-- Descripción del producto -->
